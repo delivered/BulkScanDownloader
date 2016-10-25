@@ -239,9 +239,11 @@ public class Downloader {
     private String getFileName(User user, DownloadableContent itemToSave) {
         String dir = config.getRootDir();
 
-        if (config.isUseFolders())
+        if (config.isUseFolders()) {
             dir = Paths.get(dir, user.getUsername(), itemToSave.getFolderName()).toString();
-
+        } else {
+            dir = Paths.get(dir, user.getUsername()).toString();
+        }
         Enclosure enclosureToSave = itemToSave.getClass() == Enclosure.class ? (Enclosure) itemToSave : null;
 
         String fileName = String.format("%s%s.%s",

@@ -85,6 +85,7 @@ A sample configuration file can be found in the root directory of this repositor
   // Whether or not to use subfolders for the file downloads
   // if true, a subfolder structure like `rootDir/username/mailbox-name/file.jpg`
   // will be used
+  // if false, a structure like `rootDir/username/file.jpg` will be used
   "useFolders": true,
 
   // Whether or not to run continuously (every 10 minutes) or run once.
