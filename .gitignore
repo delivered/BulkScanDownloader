@@ -5,3 +5,4 @@
 .settings
 *.iml
 target/
+bulkscandownloader.json

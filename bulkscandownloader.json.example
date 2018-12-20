@@ -1,0 +1,9 @@
+{
+  "rootDir": "~/bulkscan",
+  "postDownloadAction": 0,
+  "useFolders": true,
+  "runContinously": true,
+  "users": [
+    {"active": true, "username": "johndoe", "password": "johndoex", "allEnvelopeSides": true, "contentScans": true, "envelopeImages": true}
+  ]
+}
